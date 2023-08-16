@@ -15,6 +15,6 @@ export default defineNuxtConfig({
     preference: 'light',
   },
   app: {
-    cdnURL: '/new-ui-asset/'
+    baseUrl: '/new-ui-asset/public/'
   },
 })
