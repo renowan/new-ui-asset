@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   },
-  router: {
-    base: '/<reponame>/'
+  app: {
+    baseURL: '/new-ui-asset/'
   },
 })
