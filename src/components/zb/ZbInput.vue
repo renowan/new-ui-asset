@@ -148,10 +148,6 @@ export default defineComponent({
   },
   emits: ['update:modelValue', 'blur'],
   setup (props, { emit, slots }) {
-    // TODO: Remove
-    // const appConfig = useAppConfig()
-
-    // const ui = computed<Partial<typeof appConfig.ui.input>>(() => defu({}, props.ui, appConfig.ui.input))
     const ui = computed(() => appConfig.ui.input)
 
     const { emitFormBlur } = useFormEvents()

@@ -42,5 +42,5 @@
 </template>
 
 <script setup>
-
+const textValue = ref('')
 </script>

@@ -11,10 +11,10 @@
               to="/"
               class="flex items-center p-1 text-gray-900 rounded hover:bg-gray-100 group text-sm"
             >
-              <span class="ml-2">ダッシュボード</span>
+              <span class="ml-2">Home</span>
             </NuxtLink>
           </li>
-          <li>
+          <!-- <li>
             <button
               type="button"
               class="flex items-center w-full p-1 text-base text-gray-900 transition duration-75 rounded group hover:bg-gray-100"
@@ -50,29 +50,7 @@
                 >
               </li>
             </ul>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="flex items-center w-full p-1 text-base text-gray-900 transition duration-75 rounded group hover:bg-gray-100"
-              aria-controls="dropdown-example"
-              data-collapse-toggle="dropdown-example"
-            >
-              <span class="flex-1 ml-2 text-left whitespace-nowrap text-sm"
-                >デザインサンプル</span
-              >
-              <span class="i-heroicons-chevron-down-20-solid w-5 h-5 ms-auto transform transition-transform duration-200 text-gray-500 group-hover:text-gray-900 text-gray-900"></span>
-            </button>
-            <ul id="dropdown-example" class="py-1 space-y-1">
-              <li>
-                <NuxtLink
-                  to="/sample/scroll-table"
-                  class="flex items-center w-full p-1 text-gray-900 transition duration-75 rounded pl-6 group hover:bg-gray-100 text-sm"
-                  >横スクロールテーブル</NuxtLink
-                >
-              </li>
-            </ul>
-          </li>
+          </li> -->
           <li>
             <button
               type="button"
@@ -121,6 +99,28 @@
                   to="/ui/dropdown"
                   class="flex items-center w-full p-1 text-gray-900 transition duration-75 rounded pl-6 group hover:bg-gray-100 text-sm"
                   >Dropdown</NuxtLink
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="flex items-center w-full p-1 text-base text-gray-900 transition duration-75 rounded group hover:bg-gray-100"
+              aria-controls="dropdown-example"
+              data-collapse-toggle="dropdown-example"
+            >
+              <span class="flex-1 ml-2 text-left whitespace-nowrap text-sm"
+                >デザインサンプル</span
+              >
+              <span class="i-heroicons-chevron-down-20-solid w-5 h-5 ms-auto transform transition-transform duration-200 text-gray-500 group-hover:text-gray-900 text-gray-900"></span>
+            </button>
+            <ul id="dropdown-example" class="py-1 space-y-1">
+              <li>
+                <NuxtLink
+                  to="/sample/scroll-table"
+                  class="flex items-center w-full p-1 text-gray-900 transition duration-75 rounded pl-6 group hover:bg-gray-100 text-sm"
+                  >横スクロールテーブル</NuxtLink
                 >
               </li>
             </ul>
