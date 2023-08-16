@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "no-console": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ]
+  }
+}
