@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   srcDir: 'src/',
   devtools: { enabled: true },
   modules: ['@nuxthq/ui'],
@@ -13,4 +14,4 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   }
-});
+})
