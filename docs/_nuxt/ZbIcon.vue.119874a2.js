@@ -1,1 +1,0 @@
-import{f as n,o as a,c as s,n as o}from"./entry.17825305.js";const l=n({__name:"ZbIcon",props:{name:{type:String,default:""}},setup(e){return(t,c)=>(a(),s("span",{class:o(e.name)},null,2))}});export{l as _};

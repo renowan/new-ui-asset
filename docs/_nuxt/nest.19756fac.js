@@ -1,1 +1,0 @@
-import{_ as t,c as s,b as o,a as n,o as c,D as a}from"./entry.17825305.js";const _={setup(){return console.log("nest parent page setup"),{}}},r={class:"flex-col p-6"},p=n("div",null,"this is nest index page",-1);function d(i,l,u,f,x,m){const e=a;return c(),s("div",r,[p,o(e)])}const h=t(_,[["render",d]]);export{h as default};
