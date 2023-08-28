@@ -158,10 +158,10 @@ const badge = {
   },
   color: {
     white: {
-      solid: 'ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-900 dark:text-white bg-white dark:bg-gray-900'
+      solid: 'ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-600 dark:text-white bg-white dark:bg-gray-900'
     },
     gray: {
-      solid: 'ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 dark:bg-gray-800'
+      solid: 'ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-600 dark:text-gray-200 bg-gray-50 dark:bg-gray-800'
     },
     black: {
       solid: 'text-white dark:text-gray-900 bg-gray-900 dark:bg-white'
@@ -219,21 +219,35 @@ const button = {
   color: {
     white: {
       solid:
-        'shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-900 dark:text-white bg-white hover:bg-gray-50 disabled:bg-white dark:bg-gray-900 dark:hover:bg-gray-800/50 dark:disabled:bg-gray-900 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+        'shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-600 dark:text-white bg-white hover:bg-gray-50 disabled:bg-white dark:bg-gray-900 dark:hover:bg-gray-800/50 dark:disabled:bg-gray-900 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
       ghost:
         'text-gray-900 dark:text-white hover:bg-white dark:hover:bg-gray-900 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
     },
     gray: {
       solid:
-        'shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-700 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+        'shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 text-gray-600 dark:text-gray-200 bg-gray-50 hover:bg-gray-100 disabled:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700/50 dark:disabled:bg-gray-800 focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
       ghost:
-        'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+        'text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+      link: 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline-offset-4 hover:underline focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+    },
+    red: {
+      solid:
+        'shadow-sm text-white dark:text-red-200 bg-red-500 hover:bg-red-600 disabled:bg-red-50 dark:bg-red-800 dark:hover:bg-red-700/50 dark:disabled:bg-red-800 focus-visible:ring-2 focus-visible:ring-red-500 dark:focus-visible:ring-red-400',
+      ghost:
+        'text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+      link: 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline-offset-4 hover:underline focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+    },
+    blue: {
+      solid:
+        'shadow-sm text-white dark:text-blue-200 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-50 dark:bg-blue-800 dark:hover:bg-blue-700/50 dark:disabled:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400',
+      ghost:
+        'text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
       link: 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 underline-offset-4 hover:underline focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
     },
     black: {
       solid:
         'shadow-sm text-white dark:text-gray-900 bg-gray-900 hover:bg-gray-800 disabled:bg-gray-900 dark:bg-white dark:hover:bg-gray-100 dark:disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
-      link: 'text-gray-900 dark:text-white underline-offset-4 hover:underline focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+      link: 'text-gray-700 dark:text-white underline-offset-4 hover:underline focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
     },
   },
   variant: {
@@ -399,7 +413,7 @@ const input = {
   wrapper: 'relative',
   base: 'relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0',
   rounded: 'rounded',
-  placeholder: 'placeholder-gray-400 dark:placeholder-gray-500',
+  placeholder: 'placeholder-gray-300 dark:placeholder-gray-500',
   size: {
     '2xs': 'text-xs',
     xs: 'text-xs',
@@ -447,11 +461,11 @@ const input = {
   color: {
     white: {
       outline:
-        'shadow-sm dark:bg-gray-900 text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
+        'shadow-sm dark:bg-gray-900 text-gray-600 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
     },
     gray: {
       outline:
-        'shadow-sm bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
+        'shadow-sm bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-white ring-1 ring-inset ring-gray-300 dark:ring-gray-700 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
     },
   },
   variant: {
@@ -627,7 +641,7 @@ const checkbox = {
   background: 'bg-white dark:bg-gray-900',
   border: 'border border-gray-300 dark:border-gray-700',
   ring: 'focus-visible:ring-2 focus-visible:ring-{color}-500 dark:focus-visible:ring-{color}-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-900',
-  label: 'font-normal text-gray-700 dark:text-gray-200',
+  label: 'font-normal text-gray-600 dark:text-gray-200',
   required: 'text-red-500 dark:text-red-400',
   help: 'text-gray-500 dark:text-gray-400',
   default: {
@@ -847,7 +861,7 @@ const commandPalette = {
 const pagination = {
   wrapper: 'flex items-center -space-x-px',
   base: '',
-  rounded: 'first:rounded-s-md last:rounded-e-md',
+  rounded: 'first:rounded last:rounded',
   default: {
     size: 'sm',
     activeButton: {
@@ -927,7 +941,7 @@ const modal = {
   },
   background: 'bg-white dark:bg-gray-900',
   ring: '',
-  rounded: 'rounded-lg',
+  rounded: 'rounded',
   shadow: 'shadow-xl',
   width: 'sm:max-w-lg md:max-w-3xl',
   height: '',
@@ -1050,7 +1064,7 @@ const notification = {
   description: 'mt-1 text-sm leading-4 text-gray-500 dark:text-gray-400',
   background: 'bg-white dark:bg-gray-900',
   shadow: 'shadow-lg',
-  rounded: 'rounded-lg',
+  rounded: 'rounded',
   padding: 'p-4',
   ring: 'ring-1 ring-gray-200 dark:ring-gray-800',
   icon: {

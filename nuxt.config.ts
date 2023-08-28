@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   target: 'static',
   srcDir: 'src/',
   devtools: { enabled: true },
+  css: [
+    '~/assets/fontello/css/fontello-customize.css',
+    '~/assets/fontello/css/fontello-codes.css',
+    '~/assets/fontello/css/animation.css',
+  ],
   modules: ['@nuxthq/ui'],
   // app: {
   //   head: {
@@ -16,6 +21,6 @@ export default defineNuxtConfig({
     preference: 'light',
   },
   app: {
-    baseUrl: '/new-ui-asset/'
+    baseUrl: '/new-ui-asset/',
   },
 })

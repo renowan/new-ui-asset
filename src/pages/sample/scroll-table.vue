@@ -2,21 +2,18 @@
   <div class="flex flex-1 flex-col overflow-auto">
     <div class="p-6">
       <h1 class="text-2xl font-semibold text-green-500 mb-4">GHG排出登録</h1>
-      <p class="text-sm text-gray-600 mb-4">
-        どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。この書生というのは時々我々を捕つかまえて煮にて食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌てのひらに載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始みはじめであろう。
-      </p>
       <h3 class="text-gray-400 font-semibold mb-2">フィルター</h3>
       <div class="grid grid-cols-3 gap-3">
         <div class="">
-          <label class="text-sm text-gray-700 block mb-1">選択1</label>
+          <label class="text-sm text-gray-600 block mb-1">選択1</label>
           <USelect v-model="selected" :options="people" />
         </div>
         <div class="">
-          <label class="text-sm text-gray-700 block mb-1">選択2</label>
+          <label class="text-sm text-gray-600 block mb-1">選択2</label>
           <USelectMenu v-model="selected" :options="people" />
         </div>
         <div class="items-center justify-center">
-          <label class="text-sm text-gray-700 block mb-1">選択3</label>
+          <label class="text-sm text-gray-600 block mb-1">選択3</label>
           <USelectMenu v-model="selected" :options="people" />
         </div>
       </div>

@@ -6,6 +6,17 @@
       どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。この書生というのは時々我々を捕つかまえて煮にて食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌てのひらに載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始みはじめであろう。
     </p>
 
+    <h3 class="mb-1">font Iconsサンプル</h3>
+    <div class="mb-2 text-sm text-gray-600">
+      文章の中にアイコンを<i class="icon-pencil"></i>入れてみる。<br>
+      <i class="icon-up-open-mini"></i>
+      <i class="icon-right-open-mini"></i>
+      <i class="icon-left-open-mini"></i>
+      <i class="icon-down-open-mini"></i>
+      <i class="icon-info-circled"></i>
+      <i class="icon-home"></i>
+      <i class="icon-calendar-1"></i>
+    </div>
     <h3 class="mb-1">Tooltipサンプル</h3>
     <div class="text-sm text-gray-600 mb-2">
       どこで生れたかとんと見当けんとうがつかぬ。<ZbTooltip
@@ -13,11 +24,7 @@
         :popper="{ placement: 'top' }"
       >
         <span class="inline-flex items-baseline text-green-700"
-          ><span
-            class="self-center i-heroicons-exclamation-triangle-solid h-5 w-5"
-            aria-hidden="true"
-          ></span
-          >吾輩</span
+          ><i class="icon-info-circled"></i> 吾輩</span
         > </ZbTooltip
       >はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。
     </div>
@@ -38,7 +45,6 @@
         <ZbInput
           v-model="textValue"
           placeholder="placeholder"
-          :autofocus="true"
         />
       </div>
       <div class="mb-4">
@@ -247,7 +253,7 @@
 
     <div class="mb-10">
       <h3 class="mb-1">ZbPagination</h3>
-      <UPagination v-model="paginationValue" :page-count="10" :total="44" />
+      <ZbPagination v-model="paginationValue" :page-count="10" :total="44" />
     </div>
 
     <div class="mb-10">
@@ -474,7 +480,7 @@
 <script setup>
 const textValue = ref('')
 
-const checkboxValue = ref(false)
+const checkboxValue = ref(true)
 const paginationValue = ref(2)
 
 const methods = [
@@ -527,3 +533,21 @@ const onChangeTabs = (index) => {
   console.log('onChangeTabs', index)
 }
 </script>
+
+<style>
+.demo-icon {
+  font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+}
+</style>

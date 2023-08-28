@@ -17,7 +17,7 @@
         @change="onChange"
       >
     </div>
-    <div v-if="label || $slots.label" class="ms-2 text-sm">
+    <div v-if="label || $slots.label" class="ms-2 text-sm break-keep">
       <label :for="name" :class="ui.label">
         <slot name="label">{{ label }}</slot>
         <span v-if="required" :class="ui.required">*</span>

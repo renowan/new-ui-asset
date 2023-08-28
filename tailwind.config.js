@@ -1,7 +1,15 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
+// import colors from 'tailwindcss/colors'
+// const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
+    // extend: {
+    //   colors: {
+    //     orange: 'orange',
+    //     blue: 'blue',
+    //   }
+    // },
     fontFamily: {
       sans: ['-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'],
     },

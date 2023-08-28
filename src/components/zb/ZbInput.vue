@@ -41,11 +41,7 @@ import { defu } from 'defu'
 import UIcon from './ZbIcon.vue'
 import { useFormEvents } from './composables/useFormEvents'
 import { classNames } from './utils'
-import { useAppConfig } from '#imports'
-// TODO: Remove
-
 import appConfig from './appConfig'
-// const appConfig = useAppConfig()
 
 export default defineComponent({
   components: {
@@ -156,7 +152,7 @@ export default defineComponent({
 
     const autoFocus = () => {
       if (props.autofocus) {
-        input.value?.focus()
+        // input.value?.focus()
       }
     }
 

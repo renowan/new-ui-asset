@@ -1,7 +1,7 @@
 <template>
   <Menu v-slot="{ open }" as="div" class="relative">
     <MenuButton as="div">
-      <UButton v-if="iconName" color="gray" label="" variant="ghost" :icon="iconName" />
+      <ZbButton v-if="iconName" color="gray" label="" variant="ghost" :icon="iconName" />
       <ZbButton
         v-else
         color="white"
@@ -21,7 +21,7 @@
               static
             >
               <button
-                class="group flex items-center gap-2 w-full px-2 py-1.5 text-sm rounded text-gray-700 dark:text-gray-200 hover:bg-gray-100"
+                class="group flex items-center gap-2 w-full px-2 py-1.5 text-sm rounded text-gray-600 dark:text-gray-200 hover:bg-gray-100"
                 @click="onClick(option)"
               >
                 {{ option[props.optionsLabel] }}
@@ -38,6 +38,7 @@
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 import type { PropType } from 'vue'
 import type { DropdownItem } from './types'
+import ZbButton from './ZbButton.vue'
 
 const props = defineProps({
   options: {

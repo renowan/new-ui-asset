@@ -23,15 +23,15 @@
       <h3 class="text-gray-400 font-semibold mb-2">フィルター</h3>
       <div class="grid grid-cols-3 gap-3">
         <div class="">
-          <label class="text-sm text-gray-700 block mb-1">拠点名</label>
+          <label class="text-sm text-gray-600 block mb-1">拠点名</label>
           <ZbSelect v-model="selected" :options="people" />
         </div>
         <div class="">
-          <label class="text-sm text-gray-700 block mb-1">企業名</label>
+          <label class="text-sm text-gray-600 block mb-1">企業名</label>
           <ZbSelect v-model="selected" :options="people" />
         </div>
         <div class="items-center justify-center">
-          <label class="text-sm text-gray-700 block mb-1">グループ</label>
+          <label class="text-sm text-gray-600 block mb-1">グループ</label>
           <ZbSelect v-model="selected" :options="people" />
         </div>
       </div>
@@ -128,7 +128,7 @@
                 class="whitespace-nowrap px-3 py-2 text-gray-500 text-sm bg-gray-50"
               >
                 <NuxtLink
-                  class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-normal rounded text-sm gap-x-1.5 px-2.5 py-1.5 text-primary-500 hover:text-primary-600 disabled:text-primary-500 dark:text-primary-400 dark:hover:text-primary-500 dark:disabled:text-primary-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
+                  class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0 font-normal rounded text-sm gap-x-1.5 text-primary-500 hover:text-primary-600 disabled:text-primary-500 dark:text-primary-400 dark:hover:text-primary-500 dark:disabled:text-primary-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center"
                   :to="`/c/activity-emissions/hubs/${index + 1}`"
                 >
                   拠点名 {{ index + 1 }}
@@ -180,8 +180,8 @@ const monthOptions = [
   { label: '4月', value: '04' },
 ]
 
-const selectedYear = ref(yearOptions[0])
-const selectedMonth = ref(monthOptions[0])
+const selectedYear = ref(yearOptions[0].value)
+const selectedMonth = ref(monthOptions[0].value)
 </script>
 
 <style scoped>

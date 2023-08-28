@@ -21,7 +21,6 @@
 <script lang="ts">
 import { ref, computed, watch, onMounted, nextTick, defineComponent } from 'vue'
 import type { PropType } from 'vue'
-import { defu } from 'defu'
 import { classNames } from './utils'
 import { useFormEvents } from './composables/useFormEvents'
 import appConfig from './appConfig'

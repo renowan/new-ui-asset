@@ -23,13 +23,14 @@
       <template #footer>
         <div class="text-right">
           <ZbButton
+            v-if="showCancel"
             class="mr-1"
             color="gray"
             variant="ghost"
             @click="onClose"
-            >キャンセル</ZbButton
+            >{{ cancelLabel }}</ZbButton
           >
-          <UButton color="green" variant="solid">決定</UButton>
+          <UButton v-if="showOk" color="green" variant="solid">{{ okLabel }}</UButton>
         </div>
       </template>
     </ZbCard>
@@ -43,6 +44,10 @@ const props = defineProps({
   modelValue: { type: Boolean, default: false },
   preventClose: { type: Boolean, default: false },
   bodyClass: { type: String, default: 'p-3' },
+  showOk: { type: Boolean, default: true },
+  showCancel: { type: Boolean, default: true },
+  okLabel: { type: String, default: '決定' },
+  cancelLabel: { type: String, default: 'キャンセル' },
 })
 
 const emit = defineEmits(['update:modelValue', 'onClose'])

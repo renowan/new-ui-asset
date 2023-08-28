@@ -116,4 +116,8 @@ const tabsOptions = [
   { label: 'tab3', index: 2 },
   { label: 'tab4', index: 3 },
 ]
+
+const onChangeTabs = (index) => {
+  console.log('onChangeTabs', index)
+}
 </script>

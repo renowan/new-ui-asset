@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="mb-6">
-        <p class="text-sm text-gray-600 mb-1">色パターン（バグあり）</p>
+        <p class="text-sm text-gray-600 mb-1">色パターン</p>
         <div class="flex">
           <ZbSelect
             v-model="onSelected"
@@ -63,22 +63,23 @@
       <div class="mb-6">
         <div class="mb-6">
           <p class="text-sm text-gray-600 mb-1">Size</p>
-          <div class="flex">
+          <div class="flex items-center">
             <ZbSelect
               v-model="onSelected"
               :options="options"
-              class="w-32 mb-2 mr-2"
+              class="w-32 mr-2"
+              size="sm"
             />
             <ZbSelect
               v-model="onSelected"
               :options="options"
-              class="w-32 mb-2 mr-2"
+              class="w-32 mr-2"
               size="md"
             />
             <ZbSelect
               v-model="onSelected"
               :options="options"
-              class="w-32 mb-2 mr-2"
+              class="w-32 mr-2"
               size="lg"
             />
           </div>

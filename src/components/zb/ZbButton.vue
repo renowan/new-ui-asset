@@ -32,16 +32,9 @@
 <script lang="ts">
 import { computed, defineComponent, useSlots } from 'vue'
 import type { PropType } from 'vue'
-// import { defu } from 'defu'
 import ULink from './ZbLink.vue'
 import { classNames } from './utils'
 import UIcon from './ZbIcon.vue'
-// import { useAppConfig } from '#imports'
-// TODO: Remove
-// @ts-expect-error
-// import appConfig from '#build/app.config'
-
-// const appConfig = useAppConfig()
 import appConfig from './appConfig'
 
 
@@ -140,11 +133,12 @@ export default defineComponent({
       type: Object as PropType<Partial<typeof appConfig.ui.button>>,
       default: () => appConfig.ui.button,
     },
+    roundedOff: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props) {
-    // TODO: Remove
-    // const appConfig = useAppConfig()
-
     const slots = useSlots()
 
     const ui = computed(() => appConfig.ui.button)
@@ -180,7 +174,7 @@ export default defineComponent({
       return classNames(
         ui.value.base,
         ui.value.font,
-        ui.value.rounded,
+        props.roundedOff ? '' : ui.value.rounded,
         // @ts-expect-error
         ui.value.size[props.size],
         // @ts-expect-error

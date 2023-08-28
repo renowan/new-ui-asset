@@ -1,36 +1,36 @@
 <template>
   <div :class="ui.wrapper">
     <slot name="prev" :on-click="onClickPrev">
-      <UButton
+      <ZbButton
         v-if="prevButton"
         :size="size"
         :disabled="!canGoPrev"
         :class="[ui.base, ui.rounded]"
         v-bind="{ ...ui.default.prevButton, ...prevButton }"
-        :ui="{ rounded: '' }"
+        :rounded-off="true"
         @click="onClickPrev"
       />
     </slot>
 
-    <UButton
+    <ZbButton
       v-for="(page, index) of displayedPages"
       :key="index"
       :size="size"
       :label="`${page}`"
       v-bind="page === currentPage ? { ...ui.default.activeButton, ...activeButton } : { ...ui.default.inactiveButton, ...inactiveButton }"
       :class="[{ 'pointer-events-none': typeof page === 'string', 'z-[1]': page === currentPage }, ui.base, ui.rounded]"
-      :ui="{ rounded: '' }"
+      :rounded-off="true"
       @click="() => onClickPage(page)"
     />
 
     <slot name="next" :on-click="onClickNext">
-      <UButton
+      <ZbButton
         v-if="nextButton"
         :size="size"
         :disabled="!canGoNext"
         :class="[ui.base, ui.rounded]"
         v-bind="{ ...ui.default.nextButton, ...nextButton }"
-        :ui="{ rounded: '' }"
+        :rounded-off="true"
         @click="onClickNext"
       />
     </slot>
@@ -40,7 +40,7 @@
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
 import type { PropType } from 'vue'
-import UButton from '../ZbButton.vue'
+import ZbButton from './ZbButton.vue'
 import type { Button } from './types/button'
 import appConfig from './appConfig'
 
@@ -48,7 +48,7 @@ import appConfig from './appConfig'
 
 export default defineComponent({
   components: {
-    UButton
+    ZbButton
   },
   props: {
     modelValue: {
