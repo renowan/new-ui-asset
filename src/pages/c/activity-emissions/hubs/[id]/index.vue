@@ -73,7 +73,6 @@
           <UButtonGroup size="sm" class="mr-1">
             <UButton label="マーケット" color="green" />
             <UButton label="ロケーション" color="white" />
-            <UButton label="abc" color="white" />
           </UButtonGroup>
           <UButtonGroup size="sm">
             <UButton label="tCO2" color="green" />
